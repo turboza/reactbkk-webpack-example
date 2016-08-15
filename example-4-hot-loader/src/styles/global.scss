@@ -1,0 +1,9 @@
+@import '~styles/_variables.scss';
+
+body {
+  font-family: Arial;
+  padding-top: 40px;
+  background: $bg-color;
+  text-align: center;
+  color: white;
+}
