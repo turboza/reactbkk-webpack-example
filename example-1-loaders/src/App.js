@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer.js';
 
-import image from './image.jpg';
+import logo from './logo.png';
 
 import './style.css';
 import './footer.scss';
@@ -9,10 +9,9 @@ import './footer.scss';
 export default function App() {
   return (
     <div>
-      <h1>Title</h1>
+      <h1>ReactJS Bangkok 1.0.0</h1>
       <div className="content">
-        <div>Content</div>
-        <img src={image} width="200" />
+        <img src={logo} className="logo" />
       </div>
       <Footer />
     </div>

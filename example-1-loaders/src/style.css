@@ -1,3 +1,24 @@
+body {
+  font-family: Arial;
+  padding-top: 40px;
+  background: #383838;
+  text-align: center;
+  color: white;
+}
+
 .content {
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  animation: spin 30s infinite linear;
+}
+
+@keyframes spin {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
 }
