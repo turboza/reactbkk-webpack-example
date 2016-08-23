@@ -22,7 +22,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.counter}
+        <div style={{ fontSize: '28px' }}>
+          {this.state.counter}
+        </div>
         <Home />
         <Footer />
       </div>

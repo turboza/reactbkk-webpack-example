@@ -28,11 +28,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css?module&&localIdentName=[local]___[hash:base64:5]', 'postcss'],
+        loaders: ['style', 'css?module&localIdentName=[local]___[hash:base64:5]', 'postcss'],
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css?module&&localIdentName=[local]___[hash:base64:5]', 'postcss', 'sass'],
+        loaders: ['style', 'css?module&localIdentName=[local]___[hash:base64:5]', 'postcss', 'sass'],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
