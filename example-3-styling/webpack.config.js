@@ -18,11 +18,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css?module&&localIdentName=[local]___[hash:base64:5]', 'postcss'],
+        loaders: ['style', 'css?module&localIdentName=[local]___[hash:base64:5]', 'postcss'],
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css?module&&localIdentName=[local]___[hash:base64:5]', 'postcss', 'sass'],
+        loaders: ['style', 'css?module&localIdentName=[local]___[hash:base64:5]', 'postcss', 'sass'],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -32,7 +32,7 @@ module.exports = {
   },
   postcss: function () {
     return [autoprefixer];
-    // return [autoprefixer({ browsers: ['last 2 versions'] })];
+    // return [autoprefixer({ browsers: ['last 2 versions'] })]; // <-- In case we want to limit to only new browsers
   },
   resolve: {
     modulesDirectories: ['src', 'node_modules'],
